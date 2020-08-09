@@ -34,7 +34,7 @@ public class BrowserStackIosTests {
                 ExpectedConditions.elementToBeClickable(MobileBy.AccessibilityId("Text Input")));
         textInput.sendKeys("hello@browserstack.com");
 
-        driver.findElementByAccessibilityId("Next").click();
+        textInput.sendKeys("\n");
         Thread.sleep(5000);
 
         IOSElement textOutput = (IOSElement) new WebDriverWait(driver, 30).until(
